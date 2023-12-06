@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-    <title>Document</title>
+
+    <title>practice</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <center>    <table class="container"   border bgcolor="black" cellpadding="15px"  cellspacing="10px">
-<tr>
-    <input id="input" type="text" style="height: 80px; width: 280px; margin-top: 10px;border: solid 2px; background-color: lightgreen; ">
-</tr>
-<tr ><td bgcolor="black"> <center><font  size="10px"onclick="values('AC')"><button  class="button">AC</button></font></center></td>
-    <td bgcolor="black" ><center><font  size="10px"  onclick="values('C')"><button  class="button"> C</button></font></center></td>
-    <td bgcolor="black"><center><font size="10px" onclick="values('&divide')"><button class="button">&divide</button></font></center></td>
-<td bgcolor="black" ><center><font size="10px" onclick="values('*')"><button class="button">*</button></font></center></td></tr>
-<tr bgcolor="gray">
-    <td ><center><font  size="20px" onclick="values('7')"><button class="button">7</button></font></center></td>
-    <td><center><font   size="20px"  onclick="values('8')"><button class="button">8</button></font></center></td>
-    <td><center><font   size="20px" onclick="values('9')"><button class="button">9</button></font></center></td>
-    <td><center><font   size="20px" onclick="values('-')"><button class="button">-</button></font></center></td>
-</tr>
+    <center>
+        <table class="container" border bgcolor="black" cellpadding="15px" cellspacing="10px">
+            <tr>
+                <input id="input" type="text"
+                    style="height: 80px; width: 280px; margin-top: 10px;border: solid 2px; background-color: lightgreen; ">
+            </tr>
+            <tr>
+                <td bgcolor="black">
+                    <center>
+                        <font size="10px" onclick="values('AC')"><button class="button">AC</button></font>
+                    </center>
+                </td>
+                <td bgcolor="black">
+                    <center>
+                        <font size="10px" onclick="values('C')"><button class="button"> C</button></font>
+                    </center>
+                </td>
+                <td bgcolor="black">
+                    <center>
+                        <font size="10px" onclick="values('&divide')"><button class="button">&divide</button></font>
+                    </center>
+                </td>
+                <td bgcolor="black">
+                    <center>
+                        <font size="10px" onclick="values('*')"><button class="button">*</button></font>
+                    </center>
+                </td>
+            </tr>
+            <tr bgcolor="gray">
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('7')"><button class="button">7</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('8')"><button class="button">8</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('9')"><button class="button">9</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('-')"><button class="button">-</button></font>
+                    </center>
+                </td>
+            </tr>
 
-<tr bgcolor="gray">
-    <td><center><font  size="20px" onclick="values('4')"><button  class="button">4</button></font></center></td>
-    <td><center><font  size="20px" onclick="values('5')"><button  class="button">5</button></font></center></td>
-    <td><center><font  size="20px" onclick="values('6')"><button  class="button">6</button></font></center></td>
-    <td><center><font  size="20px" onclick="values('+')"><button  class="button">+</button></font></center></td>
-    
-    </tr>
+            <tr bgcolor="gray">
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('4')"><button class="button">4</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('5')"><button class="button">5</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('6')"><button class="button">6</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('+')"><button class="button">+</button></font>
+                    </center>
+                </td>
 
-    <tr bgcolor="gray">
-        <td><center><font  size="20px" onclick="values('1')"  ><button  class="button">1</button></font></center></td>
-        <td><center><font  size="20px" onclick="values('2')"><button  class="button">2</button></font></center></td>
-        <td><center><font  size="20px" onclick="values('3')"><button  class="button">3</button></font></center></td>
-<td bgcolor="red" rowspan="2"><center><font color="white" size="20px" onclick="equal()"><button  class="button">=</button></font></center></td>
+            </tr>
 
-        </tr>
-<tr bgcolor="gray">
-<td colspan="2"><center><font  size="20px"  onclick="values('0')"><button  class="button">0</button></font></center></td>
-<td><center><font  size="20px" onclick="values('.')"><button  class="button">.</button></font></center></td>
+            <tr bgcolor="gray">
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('1')"><button class="button">1</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('2')"><button class="button">2</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('3')"><button class="button">3</button></font>
+                    </center>
+                </td>
+                <td bgcolor="red" rowspan="2">
+                    <center>
+                        <font size="20px" onclick="equal()"><button class="button">=</button></font>
+                    </center>
+                </td>
 
-</tr>
-</center>
+            </tr>
+            <tr bgcolor="gray">
+                <td colspan="2">
+                    <center>
+                        <font size="20px" onclick="values('0')"><button class="button">0</button></font>
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        <font size="20px" onclick="values('.')"><button class="button">.</button></font>
+                    </center>
+                </td>
 
-
-</table>
-
-
-
-
-
-
-
-
+            </tr>
+    </center>
+    </table>
 
 
 
     <script src="app.js"></script>
 </body>
+
 </html>
