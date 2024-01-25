@@ -9,7 +9,4 @@ function equal(){
   input.value = eval(input.value)
   Math.round(input.value) 
 }
-if ( screen.value === ""){
-alert("plz  write the number")
-}
-screen.value ="";
+
