@@ -10,3 +10,5 @@ function equal(){
   Math.round(input.value) 
 }
 
+console.log(input.value);
+
