@@ -47,3 +47,9 @@ function updateRecords(records, id, prop, value) {
 }
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+
+let total = 0;
+for (let i = myArr.length - 1; i >= 0; i--) {
+  total += myArr[i];
+}
