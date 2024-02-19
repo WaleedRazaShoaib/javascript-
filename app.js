@@ -70,3 +70,42 @@ function countDown(number) {
 }
 
 countDown(4);
+
+function promptForIssue() {
+  // Using SweetAlert's fire method to prompt the user
+  Swal.mixin({
+    input: 'text',
+    confirmButtonText: 'Next &rarr;',
+    showCancelButton: true,
+    progressSteps: ['1', '2']
+  }).queue([
+    {
+      title: 'Enter Issue Title',
+      text: 'Provide a concise title for the issue'
+    },
+    {
+      title: 'Enter Issue Description',
+      text: 'Please describe the issue in detail'
+    }
+  ]).then((result) => {
+    if (result.value) {
+      const title = result.value[0];
+      const description = result.value[1];
+
+      // Call a function to create the issue on GitHub using the title and description
+      createGitHubIssue(title, description);
+    }
+  });
+}
+
+// Function to create the GitHub issue
+function createGitHubIssue(title, description) {
+  // Use GitHub API or your preferred method to create an issue
+  // For the sake of this example, we'll show an alert with the details
+  Swal.fire({
+    title: 'Issue Created!',
+    html: `Title: ${title}<br>Description: ${description}`,
+    icon: 'success',
+    confirmButtonText: 'Okay'
+  });
+}
