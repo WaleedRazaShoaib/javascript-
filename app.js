@@ -100,8 +100,7 @@ function promptForIssue() {
 
 // Function to create the GitHub issue
 function createGitHubIssue(title, description) {
-  // Use GitHub API or your preferred method to create an issue
-  // For the sake of this example, we'll show an alert with the details
+  
   Swal.fire({
     title: 'Issue Created!',
     html: `Title: ${title}<br>Description: ${description}`,
