@@ -115,3 +115,14 @@ let x = 5;
 let y = 2;
 // Assign the value x + y to z:
 let z = x + y;
+
+
+function createGitHubIssue(title, description) {
+  
+  Swal.fire({
+    title: 'Issue Created!',
+    html: `Title: ${title}<br>Description: ${description}`,
+    icon: 'success',
+    confirmButtonText: 'Okay'
+  });
+};
